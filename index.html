@@ -13,29 +13,39 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="page">
+  <div id="loginScreen" class="login-screen">
+    <section class="login-card">
+      <div class="lock">♥</div>
+      <p class="eyebrow">PRIVATE WEDDING COUNTDOWN</p>
+      <h2>Sonu & Golu</h2>
+      <p class="hint">Enter the family PIN to continue.</p>
+      <form id="loginForm">
+        <input id="pinInput" type="password" inputmode="numeric" autocomplete="one-time-code" maxlength="12" placeholder="Enter PIN" aria-label="Enter PIN" required />
+        <button type="submit">Open countdown</button>
+      </form>
+      <p id="loginError" class="error" role="alert"></p>
+    </section>
+  </div>
+
+  <main id="app" class="page hidden">
     <section class="card">
-      <p class="eyebrow">WE ARE GETTING MARRIED</p>
+      <div class="top-row">
+        <p class="eyebrow">WE ARE GETTING MARRIED</p>
+        <button id="lockBtn" class="lock-btn" type="button">Lock</button>
+      </div>
       <h1>Sonu <span>♥</span> Golu</h1>
       <p class="date">29 January 2027</p>
-
       <div class="countdown" aria-label="Wedding countdown">
         <div class="time-box"><strong id="days">0</strong><small>Days</small></div>
-        <div class="time-box"><strong id="hours">0</strong><small>Hours</small></div>
-        <div class="time-box"><strong id="minutes">0</strong><small>Minutes</small></div>
-        <div class="time-box"><strong id="seconds">0</strong><small>Seconds</small></div>
+        <div class="time-box"><strong id="hours">00</strong><small>Hours</small></div>
+        <div class="time-box"><strong id="minutes">00</strong><small>Minutes</small></div>
+        <div class="time-box"><strong id="seconds">00</strong><small>Seconds</small></div>
       </div>
-
-      <div class="milliseconds">
-        <span id="milliseconds">000</span>
-        <small>milliseconds</small>
-      </div>
-
+      <div class="milliseconds"><span id="milliseconds">000</span><small>milliseconds</small></div>
       <p id="message" class="message">Every second brings us closer.</p>
       <button id="shareBtn" type="button">Share our countdown</button>
     </section>
   </main>
-
   <script src="app.js"></script>
 </body>
 </html>
