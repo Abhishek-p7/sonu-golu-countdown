@@ -1,15 +1,25 @@
-# Sonu ❤️ Golu Wedding Countdown
+# Sonu ❤️ Golu Protected Wedding Countdown
 
-A mobile-friendly Progressive Web App counting down to **29 January 2027**.
+A mobile-friendly wedding countdown for **29 January 2027**.
 
-## Publish with GitHub Pages
+## Family PIN
 
-1. Create a new public GitHub repository.
-2. Upload all files from this folder to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`, then tap **Save**.
-6. Open the GitHub Pages link in Safari.
-7. Tap **Share → Add to Home Screen**.
+The default PIN is `2901`.
 
-The countdown updates continuously while the app is open. iOS does not permit a normal web app or Home Screen icon to update continuously while closed.
+To change it, edit this line in `app.js`:
+
+```js
+const FAMILY_PIN="2901";
+```
+
+## GitHub Pages
+
+Enable Pages from the `main` branch and `/ (root)` folder.
+
+The expected site address is:
+
+`https://abhishek-p7.github.io/sonu-golu-countdown/`
+
+## Security note
+
+This is a simple browser-side privacy gate. GitHub Pages serves public static files, so a technical user can inspect the source and discover the PIN. Do not store sensitive documents or private information in this repository.
