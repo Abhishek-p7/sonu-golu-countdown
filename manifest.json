@@ -1,0 +1,17 @@
+{
+  "name": "Sonu and Golu Wedding Countdown",
+  "short_name": "Our Countdown",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#280d1d",
+  "theme_color": "#6f2148",
+  "description": "Wedding countdown for Sonu and Golu \u2014 29 January 2027.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
